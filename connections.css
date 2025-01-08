@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.item {
+    padding: 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Ensure 4x4 layout */
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.item.correct {
+    background-color: #d4edda; /* Highlight guessed row */
+    color: #155724;
+    border: 2px solid #c3e6cb;
+    font-weight: bold;
+}
+
+.item.selected {
+    background-color: #c8e6c9; /* Highlight selected items */
+}
+
+.correct-group-row {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.item.correct {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+#timer, #hint-message, #leaderboard {
+    margin: 15px 0;
+}
+button {
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+#difficulty-selection {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#difficulty-selection h2 {
+    font-size: 1.5em;
+}
+
+#difficulty-form {
+    margin-bottom: 20px;
+}
+
+#difficulty-form label {
+    margin: 0 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

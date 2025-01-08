@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connections Game</title>
+    <link rel="stylesheet" href="connections.css">
+</head>
+<body>
+    <h1>Connections Game</h1>
+    <div id="difficulty-selection">
+        <h2>Select Difficulty</h2>
+        <form id="difficulty-form">
+            <label>
+                <input type="radio" name="difficulty" value="easy" checked> Easy
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="medium"> Medium
+            </label>
+            <label>
+                <input type="radio" name="difficulty" value="hard"> Hard
+            </label>
+        </form>
+        <button id="start-game">Start Game</button>
+    </div>
+    <div id="timer">Time Left: <span id="time-remaining">60</span> seconds</div>
+    <div id="game-board"></div>
+    <button id="submit-group">Submit Group</button>
+    <button id="hint-button">Get a Hint</button>
+    <div id="hint-message"></div>
+    <div id="leaderboard">
+        <h3>Leaderboard</h3>
+        <ul id="leaderboard-list"></ul>
+    </div>
+    <script src="connections.js"></script>
+</body>
+</html>
